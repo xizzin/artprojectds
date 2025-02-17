@@ -25,14 +25,9 @@ namespace iamapollojusticeandiamfine
             Clients_Datagrid.ItemsSource = clients.GetData();
         }
 
-        private void DoAfterLoad(object sender, RoutedEventArgs e)
-        {
-            Clients_Datagrid.Columns[0].Visibility = Visibility.Collapsed;
-        }
-
         private void addClient_button_Click(object sender, RoutedEventArgs e)
         {
-            if ((ClientCompanyName_textbox.Text == null) && (CompanyPerson_textbox.Text == null) && (Email_textbox.Text == null) && (phonenumber_textbox.Text == null))
+            if ((ClientCompanyName_textbox.Text == null) || (CompanyPerson_textbox.Text == null) || (Email_textbox.Text == null) || (phonenumber_textbox.Text == null))
             {
                 MessageBox.Show("Не все поля заполнены!");
             }
@@ -46,7 +41,7 @@ namespace iamapollojusticeandiamfine
         private void changeClient_button_Click(object sender, RoutedEventArgs e)
         {
             int ClientID = (int)(Clients_Datagrid.SelectedItem as DataRowView).Row[0];
-            if ((ClientCompanyName_textbox.Text == null) && (CompanyPerson_textbox.Text == null) && (Email_textbox.Text == null) && (phonenumber_textbox.Text == null))
+            if ((ClientCompanyName_textbox.Text == null) || (CompanyPerson_textbox.Text == null) || (Email_textbox.Text == null) || (phonenumber_textbox.Text == null))
             {
                 MessageBox.Show("Не все поля заполнены!");
             }

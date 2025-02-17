@@ -47,7 +47,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock IsEnabled="False" Grid.Row="0" Grid.Column="0" Text="Название проекта"/>
-                <ComboBox Grid.Row="1" Grid.Column="0" x:Name="projectname_combobox"/>
+                <ComboBox Grid.Row="1" Grid.Column="0" x:Name="projectname_combobox" SelectedIndex="0"/>
                 <TextBlock IsEnabled="False" Grid.Row="2" Grid.Column="0" Text="Тип ревью"/>
                 <TextBox Grid.Row="3" Grid.Column="0" Name="ReviewType_textbox"/>
                 <TextBlock IsEnabled="False" Grid.Column="1" Grid.Row="0" Text="Текст ревью"/>

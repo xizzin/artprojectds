@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|c:\\users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:manager_projects.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|c:\\users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:manager_projects.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|c:\\users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\completed_orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:completed_orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|c:\\users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\main_designer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:main_designer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\artprojectdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:artprojectdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "manager_projects.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml.cs",
+              "RelativeDocumentMoniker": "manager_projects.xaml.cs",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml.cs",
+              "RelativeToolTip": "manager_projects.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAApwB4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T14:25:46.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "manager_projects.xaml",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml",
+              "RelativeDocumentMoniker": "manager_projects.xaml",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml",
+              "RelativeToolTip": "manager_projects.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-17T14:26:31.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "completed_orders.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\completed_orders.xaml.cs",
+              "RelativeDocumentMoniker": "completed_orders.xaml.cs",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\completed_orders.xaml.cs",
+              "RelativeToolTip": "completed_orders.xaml.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwH4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T14:07:15.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main_designer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\main_designer.xaml.cs",
+              "RelativeDocumentMoniker": "main_designer.xaml.cs",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\main_designer.xaml.cs",
+              "RelativeToolTip": "main_designer.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T14:07:22.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArtProjectDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\ArtProjectDataSet.xsd",
+              "RelativeDocumentMoniker": "ArtProjectDataSet.xsd",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\ArtProjectDataSet.xsd",
+              "RelativeToolTip": "ArtProjectDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-02-17T06:10:50.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

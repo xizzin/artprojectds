@@ -36,14 +36,6 @@ namespace iamapollojusticeandiamfine
             Status_combobox.DisplayMemberPath = "StatusName";
         }
 
-        private void DoAfterLoad(object sender, RoutedEventArgs e)
-        {
-            Completed_orders_datagrid.Columns[0].Visibility = Visibility.Collapsed;
-            Completed_orders_datagrid.Columns[2].Visibility = Visibility.Collapsed;
-            Completed_orders_datagrid.Columns[5].Visibility = Visibility.Collapsed;
-            Completed_orders_datagrid.Columns[6].Visibility = Visibility.Collapsed;
-        }
-
         private void TO_Completed_orders_button_Click(object sender, RoutedEventArgs e)
         {
             completed_orders compord = new completed_orders();
@@ -77,12 +69,13 @@ namespace iamapollojusticeandiamfine
                 projects.SetDoneStatus(ProjectID, 2);
             }
             Completed_orders_datagrid.ItemsSource = projects.GetDoneProjects();
+
         }
 
         private void changeOrder_button_Click(object sender, RoutedEventArgs e)
         {
             
-            if ((ProjectWorker_combobox == null) && (Status_combobox == null) && (Status_combobox.Text == null))
+            if ((ProjectWorker_combobox == null) || (Status_combobox == null) || (Status_combobox.Text == null))
             {
                 MessageBox.Show("Заполнены не все поля!");
             }
@@ -94,6 +87,7 @@ namespace iamapollojusticeandiamfine
                 projects.UpdateQuery(WorkerID, Project_desc_textbox.Text, StatusID, ProjectID);
             }
             Completed_orders_datagrid.ItemsSource = projects.GetDoneProjects();
+
         }
 
         private void deleteOrder_button_Click(object sender, RoutedEventArgs e)
@@ -101,6 +95,7 @@ namespace iamapollojusticeandiamfine
             int ProjectID = (int)(Completed_orders_datagrid.SelectedItem as DataRowView).Row[0];
             projects.DeleteQuery(ProjectID);
             Completed_orders_datagrid.ItemsSource = projects.GetDoneProjects();
+
         }
 
         private void Completed_orders_datagrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -112,9 +107,9 @@ namespace iamapollojusticeandiamfine
                 string Selected_desc = (string)(Completed_orders_datagrid.SelectedItem as DataRowView).Row[4];
                 Project_desc_textbox.Text = Selected_desc;
 
-                int SelectedAWorkerID = (int)(Completed_orders_datagrid.SelectedItem as DataRowView).Row[3]-1;
+                int SelectedAWorkerID = (int)(Completed_orders_datagrid.SelectedItem as DataRowView).Row[3];
                 ProjectWorker_combobox.SelectedIndex = SelectedAWorkerID;
-                int SelectedStatusID = (int)(Completed_orders_datagrid.SelectedItem as DataRowView).Row[7]-1;
+                int SelectedStatusID = (int)(Completed_orders_datagrid.SelectedItem as DataRowView).Row[7];
                 Status_combobox.SelectedIndex = SelectedStatusID;
             }
             else { }

@@ -15,9 +15,6 @@ using iamapollojusticeandiamfine.ArtProjectDataSetTableAdapters;
 
 namespace iamapollojusticeandiamfine
 {
-    /// <summary>
-    /// Логика взаимодействия для main_designer.xaml
-    /// </summary>
     public partial class main_designer : Window
     {
         ProjectsTableAdapter projects = new ProjectsTableAdapter();
@@ -25,11 +22,6 @@ namespace iamapollojusticeandiamfine
         {
             InitializeComponent();
             All_orders_datagrid.ItemsSource = projects.GetEverything(); 
-        }
-
-        private void DoAfterLoad(object sender, RoutedEventArgs e)
-        {
-            All_orders_datagrid.Columns[0].Visibility = Visibility.Collapsed;
         }
 
         private void TO_Completed_orders_button_Click(object sender, RoutedEventArgs e)

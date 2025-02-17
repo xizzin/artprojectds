@@ -28,16 +28,10 @@ namespace iamapollojusticeandiamfine
             projectname_combobox.ItemsSource = projects.GetData();
             projectname_combobox.DisplayMemberPath = "StageName";
         }
-
-        private void DoAfterLoad(object sender, RoutedEventArgs e)
-        {
-            Comments_Datagrid.Columns[0].Visibility = Visibility.Collapsed;
-        }
-
         private void addComment_button_Click(object sender, RoutedEventArgs e)
         {
             int ProjectID = (int)(projectname_combobox.SelectedItem as DataRowView).Row[0];
-            if ((projectname_combobox.SelectedItem == null) && (ReviewText_textbox.Text == null) && (ReviewType_textbox.Text == null) && (ReviewTime_textbox.Text == null))
+            if ((projectname_combobox.SelectedItem == null) || (ReviewText_textbox.Text == null) || (ReviewType_textbox.Text == null) || (ReviewTime_textbox.Text == null))
             {
                 MessageBox.Show("Не все поля заполнены!");
             }
@@ -46,6 +40,7 @@ namespace iamapollojusticeandiamfine
                 reviews.InsertQuery(ProjectID, ReviewType_textbox.Text, ReviewText_textbox.Text, ReviewTime_textbox.Text);
             }
             Comments_Datagrid.ItemsSource = reviews.GetData();
+
         }
         private void TO_Comments_button_Click(object sender, RoutedEventArgs e)
         {

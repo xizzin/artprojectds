@@ -27,16 +27,16 @@ namespace iamapollojusticeandiamfine
 
         private void Auth_button_Click(object sender, RoutedEventArgs e)
         {
-            if ((Login_in_textbox.Text == null) && (Password_in_textbox.Text == null))
+            if ((Login_in_textbox.Text == null) || (Password_in_textbox.Text == null))
             {
                 MessageBox.Show("Заполните все поля!");
             }
             else
             {
                 var AllLogins = employees.GetData().Rows;
-                for (int i = 0; i < AllLogins.Count + 1; i++)
+                for (int i = 0; i < AllLogins.Count; i++)
                 {
-                    if ((AllLogins[i][3].ToString() == Login_in_textbox.Text) && (AllLogins[i][4].ToString() == Password_in_textbox.Text))
+                    if ((AllLogins[i][4].ToString() == Login_in_textbox.Text) && (AllLogins[i][5].ToString() == Password_in_textbox.Text))
                     {
                         LoggedWorkerInfo.LoggedWorkerID = (int)AllLogins[i][0];
                         int roleID = (int)AllLogins[i][2];

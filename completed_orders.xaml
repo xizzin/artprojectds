@@ -30,7 +30,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <DataGrid IsReadOnly="True" Name="Completed_orders_datagrid" Grid.Row="0" SelectionChanged="Completed_orders_datagrid_SelectionChanged"/>
+                <DataGrid IsReadOnly="True" Name="Completed_orders_datagrid" Grid.Row="0" SelectionChanged="Completed_orders_datagrid_SelectionChanged" SelectedIndex="0"/>
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -47,11 +47,11 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <TextBlock Text="Название проекта" Grid.Row="0" VerticalAlignment="Bottom" IsEnabled="False"/>
-                        <ComboBox Name="Combobox_ProjectName" Grid.Row="1" SelectionChanged="Combobox_ProjectName_SelectionChanged" Margin="0,0,0,20"/>
+                        <ComboBox Name="Combobox_ProjectName" Grid.Row="1" Margin="0,0,0,20" SelectedIndex="0"/>
                         <TextBlock Text="Название проекта" Grid.Row="2" VerticalAlignment="Bottom" IsEnabled="False" />
                         <TextBox IsEnabled="False" Name="ProjectName_textbox" Grid.Row="3" Margin="0,0,0,20"/>
                         <TextBlock IsEnabled="False" Text="Кто сделал" Grid.Row="4" VerticalAlignment="Bottom"/>
-                        <ComboBox Name="ProjectWorker_combobox" Grid.Row="5" Margin="0,0,0,20"/>
+                        <ComboBox Name="ProjectWorker_combobox" Grid.Row="5" Margin="0,0,0,20" SelectedIndex="0"/>
                     </Grid>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
@@ -65,7 +65,7 @@
                         <TextBlock Text="Описание" Grid.Row="1" IsEnabled="False" VerticalAlignment="Bottom"/>
                         <TextBox Name="Project_desc_textbox" Grid.Row="2" Margin="0,0,0,10"/>
                         <TextBlock IsEnabled="False" Text="статус" Grid.Row="3"/>
-                        <ComboBox Name="Status_combobox" Grid.Row="4" SelectionChanged="Status_combobox_SelectionChanged" Margin="0,0,0,20"/>
+                        <ComboBox Name="Status_combobox" Grid.Row="4" Margin="0,0,0,20" SelectedIndex="0"/>
                     </Grid>
                     <Grid Grid.Column="2">
                         <Grid.RowDefinitions>

@@ -27,5 +27,12 @@ namespace iamapollojusticeandiamfine
         {
             ProjectInfO_datagrid.Columns[0].Visibility = Visibility.Collapsed;
         }
+
+        private void Exit_Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

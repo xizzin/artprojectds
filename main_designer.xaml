@@ -24,6 +24,6 @@
             <Button Name="TO_Completed_orders_button" Grid.Column="0" Grid.Row="2" Content="Выполненные заказы" Margin="10,15,10,15" HorizontalAlignment="Center" Click="TO_Completed_orders_button_Click"/>
             <Button Name="Exit_Button"  Grid.Column="0" Grid.Row="3" Content="Выход" Margin="20,15,20,15" Click="Exit_Button_Click"/>
         </Grid>
-        <DataGrid IsReadOnly="True" Name="All_orders_datagrid" Grid.Column="1" Margin="10, 10, 10, 60"/>
+        <DataGrid IsReadOnly="True" Name="All_orders_datagrid" Grid.Column="1" Margin="10, 10, 10, 60" SelectedIndex="0"/>
     </Grid>
 </Window>

@@ -29,11 +29,7 @@ namespace iamapollojusticeandiamfine
             WorkeronProject_Combobox.ItemsSource = employees.GetData();
             status_combobox.ItemsSource = statuses.GetData();
             status_combobox.DisplayMemberPath = "StatusName";
-        }
 
-        private void DoAfterLoad(object sender, RoutedEventArgs e)
-        {
-            projects_datagrid.Columns[0].Visibility = Visibility.Collapsed;
         }
 
         private void TO_Comments_button_Click(object sender, RoutedEventArgs e)
@@ -69,17 +65,20 @@ namespace iamapollojusticeandiamfine
             int WorkerID = (int)(WorkeronProject_Combobox.SelectedItem as DataRowView).Row[0];
             int StatusID = (int)(status_combobox.SelectedItem as DataRowView).Row[0];
 
-            if ((status_combobox.SelectedItem == null) || (WorkeronProject_Combobox.SelectedItem != null))
+            if ((status_combobox.SelectedItem == null) && (WorkeronProject_Combobox.SelectedItem != null))
             {
                 projects_datagrid.ItemsSource = projects.SearchByWorkerID(WorkerID);
+
             }
-            if ((status_combobox.SelectedItem != null) || (WorkeronProject_Combobox.SelectedItem == null))
+            if ((status_combobox.SelectedItem != null) && (WorkeronProject_Combobox.SelectedItem == null))
             {
                 projects_datagrid.ItemsSource = projects.SearchByStatsusID(StatusID);
+
             }
-            if ((status_combobox.SelectedItem != null) || (WorkeronProject_Combobox.SelectedItem != null))
+            if ((status_combobox.SelectedItem != null) && (WorkeronProject_Combobox.SelectedItem != null))
             {
                 projects_datagrid.ItemsSource = projects.SearchByBoth(WorkerID, StatusID);
+
             }
             else
             {

@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|c:\\users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:manager_projects.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\artprojectdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{59B8DEED-0C2B-42D3-9B76-72E47A244495}|iamapollojusticeandiamfine.csproj|solutionrelative:artprojectdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "manager_projects.xaml",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml",
+              "RelativeDocumentMoniker": "manager_projects.xaml",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\manager_projects.xaml",
+              "RelativeToolTip": "manager_projects.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-17T14:26:31.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArtProjectDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\ArtProjectDataSet.xsd",
+              "RelativeDocumentMoniker": "ArtProjectDataSet.xsd",
+              "ToolTip": "C:\\Users\\xizzi\\source\\repos\\iamapollojusticeandiamfine\\ArtProjectDataSet.xsd",
+              "RelativeToolTip": "ArtProjectDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-02-17T06:10:50.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
