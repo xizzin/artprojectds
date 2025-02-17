@@ -27,9 +27,19 @@ namespace iamapollojusticeandiamfine
             projects_datagrid.ItemsSource = projects.GetEverything();
 
             WorkeronProject_Combobox.ItemsSource = employees.GetData();
+            WorkeronProject_Combobox.DisplayMemberPath = "FullName";
+
             status_combobox.ItemsSource = statuses.GetData();
             status_combobox.DisplayMemberPath = "StatusName";
 
+        }
+
+        private void DoAfterLoad(object sender, RoutedEventArgs e)
+        {
+            projects_datagrid.Columns[0].Visibility = Visibility.Collapsed;
+            projects_datagrid.Columns[2].Visibility = Visibility.Collapsed;
+            projects_datagrid.Columns[3].Visibility = Visibility.Collapsed;
+            projects_datagrid.Columns[7].Visibility = Visibility.Collapsed;
         }
 
         private void TO_Comments_button_Click(object sender, RoutedEventArgs e)

@@ -28,6 +28,13 @@ namespace iamapollojusticeandiamfine
             projectname_combobox.ItemsSource = projects.GetData();
             projectname_combobox.DisplayMemberPath = "StageName";
         }
+
+        private void DoAfterLoad(object sender, RoutedEventArgs e)
+        {
+            Comments_Datagrid.Columns[0].Visibility = Visibility.Collapsed;
+            Comments_Datagrid.Columns[1].Visibility = Visibility.Collapsed;
+        }
+
         private void addComment_button_Click(object sender, RoutedEventArgs e)
         {
             int ProjectID = (int)(projectname_combobox.SelectedItem as DataRowView).Row[0];

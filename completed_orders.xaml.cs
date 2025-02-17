@@ -36,6 +36,16 @@ namespace iamapollojusticeandiamfine
             Status_combobox.DisplayMemberPath = "StatusName";
         }
 
+        private void DoAfterLoad(object sender, RoutedEventArgs e)
+        {
+            Completed_orders_datagrid.Columns[0].Visibility = Visibility.Collapsed;
+            Completed_orders_datagrid.Columns[2].Visibility = Visibility.Collapsed;
+            Completed_orders_datagrid.Columns[3].Visibility = Visibility.Collapsed;
+            Completed_orders_datagrid.Columns[5].Visibility = Visibility.Collapsed;
+            Completed_orders_datagrid.Columns[6].Visibility = Visibility.Collapsed;
+            Completed_orders_datagrid.Columns[7].Visibility = Visibility.Collapsed;
+        }
+
         private void TO_Completed_orders_button_Click(object sender, RoutedEventArgs e)
         {
             completed_orders compord = new completed_orders();
