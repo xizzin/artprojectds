@@ -60,6 +60,10 @@ namespace iamapollojusticeandiamfine
                                 break;
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("Какие-то данные введены неправильно");
+                    }
                 }
             }
         }

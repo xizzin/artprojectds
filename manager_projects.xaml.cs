@@ -94,6 +94,8 @@ namespace iamapollojusticeandiamfine
             {
                 projects_datagrid.ItemsSource = projects.GetEverything();
             }
+            WorkeronProject_Combobox.SelectedItem = null;
+            status_combobox.SelectedItem = null;
         }
     }
 }

@@ -5254,15 +5254,15 @@ WHERE [Projects].[FK_EmployeesID] = @EmployeeID";
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "FK_EmployeesID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "UPDATE [Projects] \nSET [FK_StatusID] = @statusID, \r\n\nWHERE ([Projects].[ProjectID" +
-                "] = @Project_ID) ";
+            this._commandCollection[7].CommandText = "UPDATE [Projects] \nSET [FK_StatusID] = @statusID\r\n\nWHERE ([Projects].[ProjectID] " +
+                "= @Project_ID) ";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@statusID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "FK_StatusID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Project_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[8] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[8].Connection = this.Connection;
             this._commandCollection[8].CommandText = "UPDATE [Projects] \r\n\nSET\r\n[FK_EmployeesID] = @employeeID,\r\n[Description] = @desc," +
-                " \r\n[FK_StatusID] = @statusID, \r\n\nWHERE [Projects].[ProjectID] = @Project_ID ";
+                " \r\n[FK_StatusID] = @statusID\r\n\nWHERE [Projects].[ProjectID] = @Project_ID ";
             this._commandCollection[8].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@employeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "FK_EmployeesID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@desc", global::System.Data.SqlDbType.VarChar, 1000, global::System.Data.ParameterDirection.Input, 0, 0, "Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));

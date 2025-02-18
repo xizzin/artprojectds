@@ -76,16 +76,15 @@ namespace iamapollojusticeandiamfine
             else
             {
                 int ProjectID = (int)(Combobox_ProjectName.SelectedItem as DataRowView).Row[0];
-                projects.SetDoneStatus(ProjectID, 2);
+                projects.SetDoneStatus(2, ProjectID);
+                Completed_orders_datagrid.ItemsSource = projects.GetDoneProjects();
             }
-            Completed_orders_datagrid.ItemsSource = projects.GetDoneProjects();
-
         }
 
         private void changeOrder_button_Click(object sender, RoutedEventArgs e)
         {
             
-            if ((ProjectWorker_combobox == null) || (Status_combobox == null) || (Status_combobox.Text == null))
+            if ((ProjectWorker_combobox.SelectedItem == null) || (Status_combobox.SelectedItem == null) || (Status_combobox.Text == null))
             {
                 MessageBox.Show("Заполнены не все поля!");
             }
