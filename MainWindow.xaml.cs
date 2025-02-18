@@ -27,45 +27,40 @@ namespace iamapollojusticeandiamfine
 
         private void Auth_button_Click(object sender, RoutedEventArgs e)
         {
-            if ((Login_in_textbox.Text == null) || (Password_in_textbox.Text == null))
-            {
-                MessageBox.Show("Заполните все поля!");
-            }
-            else
-            {
-                var AllLogins = employees.GetData().Rows;
-                for (int i = 0; i < AllLogins.Count; i++)
-                {
-                    if ((AllLogins[i][4].ToString() == Login_in_textbox.Text) && (AllLogins[i][5].ToString() == Password_in_textbox.Text))
-                    {
-                        LoggedWorkerInfo.LoggedWorkerID = (int)AllLogins[i][0];
-                        int roleID = (int)AllLogins[i][2];
 
-                        switch (roleID)
-                        {
-                            case 2:
-                                manager_projects manager_Projects = new manager_projects();
-                                manager_Projects.Show();
-                                this.Close();
-                                break;
-                            case 3:
-                                main_designer main_designer = new main_designer();
-                                main_designer.Show();
-                                this.Close();
-                                break;
-                            case 1:
-                                boss_main boss_Main = new boss_main();
-                                boss_Main.Show();
-                                this.Close();
-                                break;
-                        }
-                    }
-                    else
+            var AllLogins = employees.GetData().Rows;
+            for (int i = 0; i < AllLogins.Count; i++)
+            {
+                if ((AllLogins[i][4].ToString() == Login_in_textbox.Text) && (AllLogins[i][5].ToString() == Password_in_textbox.Text))
+                {
+                    LoggedWorkerInfo.LoggedWorkerID = (int)AllLogins[i][0];
+                    int roleID = (int)AllLogins[i][2];
+
+                    switch (roleID)
                     {
-                        MessageBox.Show("Какие-то данные введены неправильно");
+                        case 2:
+                            manager_projects manager_Projects = new manager_projects();
+                            manager_Projects.Show();
+                            this.Close();
+                            break;
+                        case 3:
+                            main_designer main_designer = new main_designer();
+                            main_designer.Show();
+                            this.Close();
+                            break;
+                        case 1:
+                            boss_main boss_Main = new boss_main();
+                            boss_Main.Show();
+                            this.Close();
+                            break;
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Какие-то данные введены неправильно");
+                }
             }
+            
         }
     }
 }
